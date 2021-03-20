@@ -26,14 +26,83 @@
 // }
 // console.log(strArr, 'arrStr')
 
-    // 3. Дано колекцію - [{name: "Yura", age: 55, hobby: ["football", "ski", "hiking"], type: "Admin"}, {name: "Yulian", age: 28, hobby: ["films", "games", "hiking"], type: "user"}, {name: "Taras", age: 38, hobby: ["hunting", "TV", "javascript"], type: "user"}] – Вивести всіх юзерів з типом user. Вивести юзерів які мають хоббі hiking. Додати можливість додати нове поле для всіх юзерів – job (true/false);
+    // 3. Дано колекцію - [{name: "Yura", age: 55, hobby: ["football", "ski", "hiking"], type: "Admin"}, {name: "Yulian", age: 28, hobby: ["films", "games", "hiking"], type: "user"}, {name: "Taras", age: 38, hobby: ["hunting", "TV", "javascript"], type: "user"}] – 
+    // Вивести всіх юзерів з типом user. 
+    // Вивести юзерів які мають хоббі hiking. 
+    // Додати можливість додати нове поле для всіх юзерів – job (true/false);
+
+//     const USERS = [
+//         {
+//             name: "Yura", 
+//             age: 55, 
+//             hobby: ["football", "ski", "hiking"], 
+//             type: "Admin"
+//         }, 
+//         {
+//             name: "Yulian", 
+//             age: 28, 
+//             hobby: ["films", "games", "hiking"], 
+//             type: "user"
+//         }, 
+//         {
+//             name: "Taras", 
+//             age: 38, 
+//             hobby: ["hunting", "TV", "javascript"], 
+//             type: "user"
+//         }];
+
+// const showUser = allUsers => {
+//     const userArr = [];
+//     allUsers.map((user) => {
+//         user.type === "user" ? userArr.push(user.name) : null;
+//     });
+//     console.log(`${userArr.join(", ")} - users`)
+// }
+
+// const showHiker = allHiking => {
+//     const whoHike = [];
+//     allHiking.map((user) => {
+//         user.hobby.includes("hiking") ? whoHike.push(user.name) : null;
+//     });
+//     console.log(`${whoHike.join(", ")} - whoHike`)
+// }
+
+
+// let addJobStatus = (elem) => {
+//     let job;
+    
+//     const getObj = USERS.filter(obj => obj.name === `${elem}`);
+    
+//     let jobFalse = USERS.forEach(function(item) {item.job = false;});
+
+//         if (getObj) {
+//             jobFalse;
+            
+//             getObj.forEach(function(item) {item.job = true;});
+
+//         } else {
+//             jobFalse;
+//         }
+//     // });
+//     console.log(USERS);
+// };
+ 
+// showUser(USERS);
+// showHiker(USERS);
+// addJobStatus("Yura");
 
 
 
 
     // 4. Додати на сторінку івент який буде викидати алерт як тільки ми захочемо скопіювати текст з сторінки(додайте 1 рядок будь якого тексту) і сповіщати що це інтелектуальна власність власника.
 
-window.addEventListener('oncopy', function myFunction() {
-    document.getElementById("demo").innerHTML = "це інтелектуальна власність власника" 
-})
-    // 5. https://restcountries.eu/rest/v2/all – АПІ endpoint для країн. Вивести нумерований список з іменами всіх країн та її столицею на сторінку, назву країни зробити великими буквами. 
+// window.addEventListener('oncopy', evt = () => {
+//     if (true) alert("це інтелектуальна власність власника");
+// })
+
+
+
+
+    // 5. https://restcountries.eu/rest/v2/all – АПІ endpoint для країн. 
+    // Вивести нумерований список з іменами всіх країн та їх столицями на сторінку, 
+    // назву країни зробити великими буквами. 
