@@ -71,19 +71,19 @@
 // let addJobStatus = (elem) => {
 //     let job;
     
-//     const getObj = USERS.filter(obj => obj.name === `${elem}`);
+//     // include elem
+//     const getObjElem = USERS.filter(obj => obj.name === `${elem}`);
     
-//     let jobFalse = USERS.forEach(function(item) {item.job = false;});
+//     // not include elem
+//     const getObj = USERS.filter(obj => obj.name !== `${elem}`);
 
-//         if (getObj) {
-//             jobFalse;
-            
-//             getObj.forEach(function(item) {item.job = true;});
+//     if (getObjElem) {
+//         getObjElem.forEach(function(item) {item.job = true;});
+//     };
 
-//         } else {
-//             jobFalse;
-//         }
-//     // });
+//     if (getObj) {
+//         getObj.forEach(function(item) {item.job = false;});
+//     };
 //     console.log(USERS);
 // };
  
@@ -106,3 +106,35 @@
     // 5. https://restcountries.eu/rest/v2/all – АПІ endpoint для країн. 
     // Вивести нумерований список з іменами всіх країн та їх столицями на сторінку, 
     // назву країни зробити великими буквами. 
+
+
+// // we'll put all data to the variable;
+// let node = null;
+
+// let mainUrl = "https://restcountries.eu/rest/v2/all";
+// // let input =
+// window.onload = function() {
+//     node = fetch(mainUrl, {
+//         // headers: {
+//         //     'Content-Type': 'application/json;charset=utf-8'
+//         // },
+//         // Authentication: 'secret'
+//     })
+//         .then(response => response.json())
+//         .then(result => node = result);
+// };
+
+
+// function test() {
+//     console.log(node);
+    
+//     // get ol tag by id('main')
+//     let countries = document.getElementById('main');
+
+//     for (let i = 0; i < node.length; i++){
+//         let li = document.createElement('li');
+//         // add li elements with information (country + capital) into ol tag
+//         li.innerText = `${node[i].name.toUpperCase()}: ${node[i].capital}`;
+//         countries.appendChild(li);
+//     }
+// };
